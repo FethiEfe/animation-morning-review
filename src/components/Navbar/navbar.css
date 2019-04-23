@@ -1,0 +1,53 @@
+.nav-cont {
+  background-color: #27b7ba;
+  height: 68px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.nav-cont a {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+}
+
+.nav-links-cont {
+  display: flex;
+  justify-content: space-around;
+  padding-right: 150px;
+  width: 250px;
+}
+
+.menu-icon {
+  display: none;
+  color: white;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+@media (max-width: 900px) {
+  .nav-links-cont {
+    padding-right: 100px;
+  }
+}
+
+@media (max-width: 600px) {
+  .nav-cont {
+    justify-content: flex-start;
+  }
+
+  .nav-links-cont {
+    justify-content: flex-start;
+    padding-right: 0;
+    padding-left: 10px;
+  }
+
+  .nav-links-cont a {
+    display: none;
+  }
+
+  .menu-icon {
+    display: block;
+  }
+}
